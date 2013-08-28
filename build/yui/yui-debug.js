@@ -9603,6 +9603,14 @@ Y.mix(YUI.Env[Y.version].modules, {
         ],
         "skinnable": true
     },
+    "content-editable": {
+        "requires": [
+            "node-base",
+            "editor-selection",
+            "stylesheet",
+            "plugin"
+        ]
+    },
     "controller": {
         "use": [
             "router"
@@ -10274,6 +10282,12 @@ Y.mix(YUI.Env[Y.version].modules, {
             "editor-base"
         ]
     },
+    "editor-inline": {
+        "requires": [
+            "editor-base",
+            "content-editable"
+        ]
+    },
     "editor-lists": {
         "requires": [
             "editor-base"
@@ -10504,6 +10518,7 @@ Y.mix(YUI.Env[Y.version].modules, {
         "requires": [
             "base",
             "node",
+            "plugin",
             "selector-css3",
             "yui-throttle"
         ]
@@ -11907,7 +11922,7 @@ Y.mix(YUI.Env[Y.version].modules, {
         ]
     }
 });
-YUI.Env[Y.version].md5 = '5fa9b73f55b268a8777d1d6a2c3b801d';
+YUI.Env[Y.version].md5 = '5e03808f6217ca02ba07138bb71220d8';
 
 
 }, '@VERSION@', {"requires": ["loader-base"]});
