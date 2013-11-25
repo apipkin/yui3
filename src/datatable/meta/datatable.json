@@ -134,6 +134,19 @@
                     "event-hover"
                 ],
                 "skinnable": true
+            },
+            "datatable-filter-panel": {
+                "requires": [
+                    "datatable-base",
+                    "event-hover",
+                    "base-build",
+                    "view",
+                    "handlebars",
+                    "autocomplete-base",
+                    "autocomplete-filters",
+                    "model"
+                ],
+                "skinnable": true
             }
         }
     }
