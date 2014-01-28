@@ -407,7 +407,7 @@ YUI.add('date-ko-tests', function(Y) {
         }
     });
 
-    var suite = new Y.Test.Suite("Date");
+    var suite = new Y.Test.Suite("Date[KO]");
     suite.add(testParse);
     suite.add(testFormatKR);
     suite.add(testFormatIN);

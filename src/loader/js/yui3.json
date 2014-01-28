@@ -843,6 +843,24 @@
             "classnamemanager"
         ]
     },
+    "datatable-celleditor-keyfiltering": {
+        "requires": [
+            "datatable-editable",
+            "event-valuechange",
+            "base-build"
+        ]
+    },
+    "datatable-celleditors": {
+        "requires": [
+            "datatable-editable",
+            "view",
+            "base-build",
+            "event-mouseenter",
+            "cssbutton",
+            "event-outside"
+        ],
+        "skinnable": "true"
+    },
     "datatable-column-widths": {
         "requires": [
             "datatable-base"
@@ -861,6 +879,23 @@
             "plugin",
             "datasource-local"
         ]
+    },
+    "datatable-editable": {
+        "lang": [
+            "en",
+            "es"
+        ],
+        "requires": [
+            "datatable-base",
+            "datatype",
+            "node-screen",
+            "datatable-keynav",
+            "event-resize",
+            "event-outside",
+            "overlay",
+            "dd-plugin"
+        ],
+        "skinnable": "true"
     },
     "datatable-foot": {
         "requires": [

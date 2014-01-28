@@ -21,6 +21,7 @@ YUI.add('datatable-keynav-tests', function(Y) {
         RIGHT = 39,
         DOWN = 40;
 
+
 /***********  Please Read ****************************
 
 It happens that the native DOM property `document.activeElement` is not always
@@ -58,6 +59,7 @@ if the test doesn't directly need to check the focused element, if you use
     var activeElement,
         eventHandles,
         data = [];
+
 
     for (var i = 1; i < 20; ++i) {
         data.push({a: 'a' + i , b: 'b' + i, c: 'c' + i, d: 'd' + i, e: 'e' + i});
@@ -171,6 +173,7 @@ if the test doesn't directly need to check the focused element, if you use
                 [DOWN,'d19',17]
             ]);
 
+
         },
 
         "test moving about normal DT": function () {
@@ -269,6 +272,8 @@ if the test doesn't directly need to check the focused element, if you use
             });
         },
 
+
+
         'test add to keyActions with modifier': function () {
             var dt = this.dt,
                 eventFacade = null,
@@ -292,6 +297,7 @@ if the test doesn't directly need to check the focused element, if you use
 
         'test cell focusing': function () {
             var dt =  makeDT({
+
                 columns: [
                     {key:'abc', children: [
                         {key:'ab', children: [

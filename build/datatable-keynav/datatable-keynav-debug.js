@@ -112,6 +112,7 @@ DtKeyNav.ATTRS = {
         setter: '_focusedCellSetter'
     },
 
+
     /**
     Determines whether it is possible to navigate into the header area.
     The examples referenced in the document show both behaviors so it seems

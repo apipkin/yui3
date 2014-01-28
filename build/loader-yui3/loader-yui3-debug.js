@@ -877,6 +877,24 @@ Y.mix(YUI.Env[Y.version].modules, {
             "classnamemanager"
         ]
     },
+    "datatable-celleditor-keyfiltering": {
+        "requires": [
+            "datatable-editable",
+            "event-valuechange",
+            "base-build"
+        ]
+    },
+    "datatable-celleditors": {
+        "requires": [
+            "datatable-editable",
+            "view",
+            "base-build",
+            "event-mouseenter",
+            "cssbutton",
+            "event-outside"
+        ],
+        "skinnable": "true"
+    },
     "datatable-column-widths": {
         "requires": [
             "datatable-base"
@@ -895,6 +913,23 @@ Y.mix(YUI.Env[Y.version].modules, {
             "plugin",
             "datasource-local"
         ]
+    },
+    "datatable-editable": {
+        "lang": [
+            "en",
+            "es"
+        ],
+        "requires": [
+            "datatable-base",
+            "datatype",
+            "node-screen",
+            "datatable-keynav",
+            "event-resize",
+            "event-outside",
+            "overlay",
+            "dd-plugin"
+        ],
+        "skinnable": "true"
     },
     "datatable-foot": {
         "requires": [
@@ -2973,7 +3008,7 @@ Y.mix(YUI.Env[Y.version].modules, {
         ]
     }
 });
-YUI.Env[Y.version].md5 = '2ec8e93b30f0fc6809e2fbdba577e214';
+YUI.Env[Y.version].md5 = '74057a673bf29251543c8e479217f886';
 
 
 }, '@VERSION@', {"requires": ["loader-base"]});

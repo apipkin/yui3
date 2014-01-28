@@ -1155,6 +1155,26 @@ suite.add(new YUITest.TestCase({
             //Testing A normal module
             Assert.isTrue((loader.sorted.indexOf("datatable-body")) > -1, "Module (datatable-body) not found in sorted array");
         },
+     "Testing datatable-celleditor-keyfiltering": function(data) {
+            var loader = new Y.Loader({
+                require: ["datatable-celleditor-keyfiltering"],
+                ignoreRegistered: true,
+                allowRollup: false
+            });
+            loader.calculate();
+            //Testing A normal module
+            Assert.isTrue((loader.sorted.indexOf("datatable-celleditor-keyfiltering")) > -1, "Module (datatable-celleditor-keyfiltering) not found in sorted array");
+        },
+     "Testing datatable-celleditors": function(data) {
+            var loader = new Y.Loader({
+                require: ["datatable-celleditors"],
+                ignoreRegistered: true,
+                allowRollup: false
+            });
+            loader.calculate();
+            //Testing A normal module
+            Assert.isTrue((loader.sorted.indexOf("datatable-celleditors")) > -1, "Module (datatable-celleditors) not found in sorted array");
+        },
      "Testing datatable-column-widths": function(data) {
             var loader = new Y.Loader({
                 require: ["datatable-column-widths"],
@@ -1184,6 +1204,16 @@ suite.add(new YUITest.TestCase({
             loader.calculate();
             //Testing A normal module
             Assert.isTrue((loader.sorted.indexOf("datatable-datasource")) > -1, "Module (datatable-datasource) not found in sorted array");
+        },
+     "Testing datatable-editable": function(data) {
+            var loader = new Y.Loader({
+                require: ["datatable-editable"],
+                ignoreRegistered: true,
+                allowRollup: false
+            });
+            loader.calculate();
+            //Testing A normal module
+            Assert.isTrue((loader.sorted.indexOf("datatable-editable")) > -1, "Module (datatable-editable) not found in sorted array");
         },
      "Testing datatable-foot": function(data) {
             var loader = new Y.Loader({

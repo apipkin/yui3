@@ -107,6 +107,43 @@
                     "escape"
                 ]
             },
+            "datatable-editable": {
+                "skinnable": "true",
+                "lang": ["en", "es"],
+                "requires": [
+                    "datatable-base",
+                    "datatype",
+                    "node-screen",
+                    "datatable-keynav",
+                    "event-resize",
+                    "event-outside",
+                    "overlay",
+                    "dd-plugin"
+                ]
+            },
+            "datatable-celleditors": {
+                "skinnable": "true",
+                "requires": [
+                    "datatable-editable",
+                    "view",
+                    "base-build",
+                    "event-mouseenter",
+                    "cssbutton",
+                    "event-outside"
+                ]
+            },
+            "datatable-celleditor-keyfiltering": {
+               "requires": [
+                   "datatable-editable",
+                   "event-valuechange",
+                   "base-build"
+               ]
+            },
+            "datatable-keynav": {
+                "requires": [
+                    "yui-base", "datatable-base", "base-base", "oop"
+                ]
+            },
             "datatable-paginator": {
                 "requires": [
                     "model",

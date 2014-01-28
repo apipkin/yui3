@@ -2,12 +2,16 @@
 <html>
 <head>
     <title>datatable-editor</title>
+<<<<<<< HEAD
     <script src="../../../../build/yui/yui.js"></script>
     <style>
         td:focus, th:focus {
             font-weight: bold;
         }
     </style>
+=======
+    <script src="/build/yui/yui.js"></script>
+>>>>>>> 22dbc5f7aee7bd0e86c0e5c79305d9294f31ae09
 </head>
 <body class="yui3-skin-sam">
 
@@ -19,10 +23,17 @@
 <script>
 YUI({
     coverage: ['datatable-keynav'],
+<<<<<<< HEAD
     filter: (window.location.search.match(/[?&]filter=([^&]+)/) || [])[1] || 'raw' ,
     filters: {
         //'datatable-keynav': (window.location.search.match(/[?&]filter=([^&]+)/) || [])[1] || 'debug'
     }
+=======
+    filter: (window.location.search.match(/[?&]filter=([^&]+)/) || [])[1] || 'raw'/* ,
+    filters: {
+        'datatable-keynav': (window.location.search.match(/[?&]filter=([^&]+)/) || [])[1] || 'debug'
+    },*/
+>>>>>>> 22dbc5f7aee7bd0e86c0e5c79305d9294f31ae09
  }).use( 'test-console', 'test', 'datatable-keynav-tests',  "node-event-simulate",
         "datatable-keynav",  "datatable", "datatable-scroll","base-build",
         function(Y) {
@@ -32,7 +43,10 @@ YUI({
     Y.Test.Runner.setName('datatable-keynav');
 
     Y.Test.Runner.run();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 22dbc5f7aee7bd0e86c0e5c79305d9294f31ae09
 });
 </script>
 </body>
