@@ -324,7 +324,7 @@ YUI.add('date-fr-tests', function(Y) {
         }
     });
 
-    var suite = new Y.Test.Suite("Date [KO]");
+    var suite = new Y.Test.Suite("Date [FR]");
     suite.add(testParse);
     suite.add(testFormatFR);
     suite.add(testFormatIN);
