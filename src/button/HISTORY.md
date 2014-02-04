@@ -4,6 +4,16 @@ Button Change History
 @VERSION@
 ------
 
+* No changes.
+
+3.14.1
+------
+
+* No changes.
+
+3.14.0
+------
+
 * Fixed `disabledChange` listener to correctly disable or enable 
   buttons. ([#1374][]: @drjayvee)
 

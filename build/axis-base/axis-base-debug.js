@@ -113,6 +113,36 @@ Renderer.prototype = {
     },
 
     /**
+     * Copies an object literal.
+     *
+     * @method _copyObject
+     * @param {Object} obj Object literal to be copied.
+     * @return Object
+     * @private
+     */
+    _copyObject: function(obj) {
+        var newObj = {},
+            key,
+            val;
+        for(key in obj)
+        {
+            if(obj.hasOwnProperty(key))
+            {
+                val = obj[key];
+                if(typeof val === "object" && !Y_Lang.isArray(val))
+                {
+                    newObj[key] = this._copyObject(val);
+                }
+                else
+                {
+                    newObj[key] = val;
+                }
+            }
+        }
+        return newObj;
+    },
+
+    /**
      * Gets the default value for the `styles` attribute.
      *
      * @method _getDefaultStyles
@@ -570,7 +600,7 @@ Y.AxisBase = Y.Base.create("axisBase", Y.Base, [Y.Renderer], {
      * @method _getCoordsFromValues
      * @param {Number} min The minimum for the axis.
      * @param {Number} max The maximum for the axis.
-     * @param {length} length The distance that the axis spans.
+     * @param {Number} length The distance that the axis spans.
      * @param {Array} dataValues An array of values.
      * @param {Number} offset Value in which to offset the coordinates.
      * @param {Boolean} reverse Indicates whether the coordinates should start from
